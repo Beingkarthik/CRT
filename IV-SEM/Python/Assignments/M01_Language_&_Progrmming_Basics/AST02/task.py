@@ -1,6 +1,6 @@
 def even_odd(n: int) -> str:
    pass
-   return "Weird" if n % 2 != 0 or 6 <= n <= 20 else "Not Weird"    
+   return "Weird" if n % 2 != 0 or 6 <= n <= 20 else "Not Weird"   
 
 
 
