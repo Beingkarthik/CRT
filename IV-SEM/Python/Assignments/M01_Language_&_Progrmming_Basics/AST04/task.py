@@ -1,12 +1,8 @@
 def reverse_string(s):
-    reversed_str = ""
-    
+    reversed_chars = []
     for char in s:
-        reversed_str = char + reversed_str
-    
-    return reversed_str
-
-
+        reversed_chars.insert(0, char)
+    return ''.join(reversed_chars)
 if __name__ == "__main__":
     s = input().strip()
     print(reverse_string(s))
