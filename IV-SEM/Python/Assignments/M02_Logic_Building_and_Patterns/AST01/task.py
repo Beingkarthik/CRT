@@ -1,5 +1,5 @@
 def count_digits(n: int) -> int:
-    pass
+    return len(str(abs(n)))
 
 
 if __name__ == "__main__":
