@@ -5,10 +5,10 @@
 Write a function sum_of_digits(n: int) -> int that returns the sum of digits of a number.
 
 ### Example
-Input: 
+Input:
 123
 
-Output: 
+Output:
 6
 
 
