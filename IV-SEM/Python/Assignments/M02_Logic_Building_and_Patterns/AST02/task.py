@@ -1,5 +1,7 @@
 def reverse_number(n: int) -> int:
-    return int(str(n)[::-1])
+    rev = int(str(n)[::-1])
+    return rev
+
 
 if __name__ == "__main__":
     n = int(input())

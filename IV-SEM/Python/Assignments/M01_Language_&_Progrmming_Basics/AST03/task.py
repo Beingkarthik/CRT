@@ -1,13 +1,13 @@
 def Student_Grade_System(name: str, n1: int, n2: int, n3: int) -> str:
     avg = (n1 + n2 + n3) / 3
-    avg = int(avg * 100) / 100   # truncate instead of round
+    avg = int(avg * 100) / 100
 
-    status = "pass" if min(n1, n2, n3) >= 35 else "fail"
+    status = "Pass" if min(n1, n2, n3) >= 35 else "Fail"
 
     return f"Average grade: {avg}, Status: {status}"
 
 
 if __name__ == '__main__':
-    name = input("Enter student name: ")
-    n1, n2, n3 = list(map(int, input('Enter three grades separated by spaces: ').split()))
+    name = input()
+    n1, n2, n3 = map(int, input().split())
     print(Student_Grade_System(name, n1, n2, n3))
