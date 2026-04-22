@@ -1,0 +1,13 @@
+def Digital_sum(n):
+    if n < 10:
+        return n
+    return Digital_sum(sum(int(digit) for digit in str(n)))
+print(Digital_sum(16))
+
+
+# recursive checking array is sorted or not
+def array_is_sorted(nums):
+    return True if nums == sorted(nums) else False
+print(array_is_sorted([1,2,3,4,5]))
+
+# sortedcheck
