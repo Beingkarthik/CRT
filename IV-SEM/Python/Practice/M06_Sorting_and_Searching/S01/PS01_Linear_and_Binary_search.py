@@ -1,30 +1,27 @@
-# 1.sequential search (linear search)
+# Two searching techniques
+'''
+1. Sequential search(Linear search)
+best case ==> O(1)
+Average case ==> O(n)
+Worst case ==> O(n)
 
+2. Interval search
+'''
+def Linear_Search(nums,target):
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+    return -1
 
+li = list(map(int,input().split()))
+target = int(input())
 
+print(Linear_Search(li,target))
 
-
-
-
-
-
-# limear search
-
-# def linear_search(nums, target):
-#     for i in range(len(nums)):
-#         if nums[i] == target:
-#             return i
-#     return -1
-# li = list(map(int,input().split()))
-# target = int(input())
-# print(linear_search(li, target))
-
-#binary search
-
-def Bnary_search(nums, target):
+def Binary_Search(nums,target):
     low,high = 0,len(nums)-1
     while low <= high:
-        mid = (low+high) // 2
+        mid = (low + high) // 2
         if target == nums[mid]:
             return mid
         elif target < nums[mid]:
@@ -35,6 +32,5 @@ def Bnary_search(nums, target):
 
 li = list(map(int,input().split()))
 target = int(input())
-print(Bnary_search(li, target))
 
-
+print(Binary_Search(li,target))

@@ -63,11 +63,6 @@ for i in range(10):
 print(a)
 
 a=[i*i for i in range(10)]
-print(a)
+print(a) 
+
 #write the python code to print the max ele using for loop?
-a=[10,20,30,40,50]
-max1=a[0]
-for i in range(1,len(a)):
-    if a[i]>max1:
-        max1=a[i]
-print(max1)

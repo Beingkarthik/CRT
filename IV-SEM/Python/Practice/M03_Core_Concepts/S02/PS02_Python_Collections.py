@@ -1,31 +1,31 @@
-'''
+''' 
 Sets:
-1) Definition -->unordereed,unique collection of data { }
-2) Creation -->
-3) Adding -->
-4) Removing-->remove,discard
-5) Set Operations -->Union,intersection,difference 
-6) Leetcode Problems on Sets (268,575)
+ 1) Definition -->unordereed,unique collection of data { }
+ 2) Creation -->
+ 3) Adding -->
+ 4) Removing-->remove,discard
+ 5) Set Operations -->Union,intersection,difference 
+ 6) Leetcode Problems on Sets (268,575)
 
-Tuples:
-1) Definition --> It is a orderd and immumutable collection of data 
-( )
-2) Immutable-->can not change the elem once it is created
-3) Accessing -->
-4) Concatenation -->
-5) Nesting of tuples -->
-6) Repetition of tuples
-7) Slicing of tuples
-8) Deleting a tuple
-9) Leetcode Problems on Tuples (349,657)
+Tuples: 
+ 1) Definition --> It is a orderd and immumutable collection of data 
+ ( )
+ 2) Immutable-->can not change the elem once it is created
+ 3) Accessing --> 
+ 4) Concatenation --> 
+ 5) Nesting of tuples --> 
+ 6) Repetition of tuples
+ 7) Slicing of tuples
+ 8) Deleting a tuple
+ 9) Leetcode Problems on Tuples (349,657)
 
 Dictionary:
-1) Definition --> stores data in the form of key and value pair 
-2) Creation ({},dict())
-3) Accessing dict items (key[],get())
-4) Adding & Updating dict items (assignment)
-5) Removing dict items (del,pop(),popitem(),clear())
-6) Leetcode Problems on Dictionary(1, 242)
+ 1) Definition --> stores data in the form of key and value pair 
+ 2) Creation ({},dict())
+ 3) Accessing dict items (key[],get())
+ 4) Adding & Updating dict items (assignment)
+ 5) Removing dict items (del,pop(),popitem(),clear())
+ 6) Leetcode Problems on Dictionary(1, 242)
 
 a=set([10,20,30,40,50]) #hash(value%5)
 print(a)
@@ -77,37 +77,29 @@ print(t)
 '''
 
 #2) Creation ({},dict())
-d={"name":"Karthik",'age':20}
+d={"name":"kalyani",'age':23}
 print(d)
-d1=dict(name='Karthik',age=20)
+d1=dict(name='kalyani',age=23)
 print(d1)
 
 #3) Accessing dict items:
-d={"name":"Karthik",'age':20}
+d={"name":"kalyani",'age':23}
 print(d.get('name'))
 print(d.keys())
 print(d.values())
 
 #4) Adding & Updating dict items
-d={"name":"Karthik",'age':20}
+d={"name":"kalyani",'age':23}
 d['phn']=46432
 print(d)
 d['name']='sai'
 print(d)
 
 #5) Removing dict items (del,pop(),popitem(),clear())
-d={"name":"Karthik",'age':20}
+d={"name":"kalyani",'age':23}
 del d['age']
 print(d.pop('name'))
 print(d.popitem())
 d.clear()
 
 #6) Leetcode Problems on Dictionary(1, 242)
-a="leetcode"
-d={}
-for ele in a:
-    if ele in d:
-        d[ele] +=1
-    else:
-        d[ele] = 1
-print(d)
